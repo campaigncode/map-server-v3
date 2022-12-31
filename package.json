@@ -1,0 +1,10 @@
+{
+  "name": "tile-server-v3",
+  "version": "1.0.0",
+  "description": "Serve and render custom map tiles",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "rahul rao",
+  "license": "MIT"
+}
