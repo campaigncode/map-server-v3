@@ -5,7 +5,7 @@ echo "Configuring..."
 export PATH=/usr/local/bin:$PATH
 echo "deb http://security.ubuntu.com/ubuntu focal-security main" | tee -a /etc/apt/sources.list
 apt update
-apt install -y libicu66
+apt install -y libicu66 libuuid1
 npm i tileserver-gl
 echo "Downloading files..."
 pip3 install gdown
