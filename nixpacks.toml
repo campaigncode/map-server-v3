@@ -1,6 +1,3 @@
-[phases.setup]
-aptPkgs = ["...", "libcairo2-dev", "libjpeg8-dev", "libpango1.0-dev", "libgif-dev", "build-essential", "g++", "xvfb", "libgles2-mesa-dev", "libgbm-dev", "libxxf86vm-dev", "python3"]
-
 [phases.install]
 cmds = []
 
