@@ -6,25 +6,25 @@
     }
   },
   "styles": {
-    "test-style": {
+    "osm": {
       "style": "osm-bright/style.json",
       "tilejson": {
         "type": "overlay",
         "bounds": [8.529446, 47.364758, 8.55232, 47.380539]
       }
     },
-    "klokantech-basic": {
+    "klokantech": {
       "style": "klokantech-basic/style.json",
       "tilejson": {
         "type": "overlay",
         "bounds": [8.529446, 47.364758, 8.55232, 47.380539]
       }
     },
-    "positron": {
+    "massachusetts": {
       "style": "positron/style.json",
       "tilejson": {
         "type": "overlay",
-        "bounds": [8.529446, 47.364758, 8.55232, 47.380539]
+        "bounds": [-73.9710005, 40.1581762, -65.6153146, 47.4598397]
       }
     }
   },
