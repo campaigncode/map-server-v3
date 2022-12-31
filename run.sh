@@ -2,6 +2,7 @@
 
 echo "Starting..."
 echo "Configuring..."
+export PATH=/usr/local/bin:$PATH
 echo "deb http://security.ubuntu.com/ubuntu focal-security main" | tee -a /etc/apt/sources.list
 apt update
 apt install -y libicu66
