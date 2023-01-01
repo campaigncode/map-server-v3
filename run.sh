@@ -1,6 +1,10 @@
 #!/bin/bash
 
-echo "Downloading files..."
+echo "Downloading server files..."
+
+npm i -g tileserver-gl@4.3.3
+
+echo "Downloading tiles..."
 
 gdown --fuzzy https://drive.google.com/file/d/1aqbfEDwqM17DmRM6hNRAdO7tM3GrmZVF/view?usp=share_link
 
