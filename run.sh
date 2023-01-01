@@ -2,7 +2,7 @@
 
 echo "Downloading server files..."
 
-npm i -g tileserver-gl@4.3.3
+npm i tileserver-gl@4.3.3
 
 echo "Downloading tiles..."
 
