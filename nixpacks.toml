@@ -1,11 +1,12 @@
 [phases.setup]
-aptPkgs = ["...", "apt-utils", "libcairo2-dev", "libjpeg8-dev", "libpango1.0-dev", "libgif-dev", "build-essential", "g++", "xvfb", "libgles2-mesa-dev", "libgbm-dev", "libxxf86vm-dev", "python3", "python3-pip"]
-nixPkgs = ["...", "libuuid"]
-nixLibs = ["libuuid"]
+aptPkgs = ["...", "apt-utils", "libicu66", "libcairo2-dev", "libjpeg8-dev", "libpango1.0-dev", "libgif-dev", "build-essential", "g++", "xvfb", "libgles2-mesa-dev", "libgbm-dev", "libxxf86vm-dev", "python3", "python3-pip"]
+nixPkgs = ["...", "libuuid", "libglvnd"]
+nixLibs = ["libuuid", "libglvnd"]
+cmds = ["echo 'deb http://security.ubuntu.com/ubuntu focal-security main' | tee -a /etc/apt/sources.list", "..."]
 
 [phases.install]
-cmds = ["npm i tileserver-gl"]
+paths = ["/usr/local/bin"]
+cmds = ["npm i tileserver-gl", "pip3 install gdown"]
 
 [start]
-paths = ["/usr/local/bin"]
 cmd = "chmod +x ./run.sh && ./run.sh"
