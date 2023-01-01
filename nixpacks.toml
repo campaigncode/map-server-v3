@@ -1,8 +1,11 @@
 [phases.setup]
-aptPkgs = ["...", "libcairo2-dev", "libjpeg8-dev", "libpango1.0-dev", "libgif-dev", "build-essential", "g++", "xvfb", "libgles2-mesa-dev", "libgbm-dev", "libxxf86vm-dev", "python3", "python3-pip"]
+aptPkgs = ["...", "apt-utils", "libcairo2-dev", "libjpeg8-dev", "libpango1.0-dev", "libgif-dev", "build-essential", "g++", "xvfb", "libgles2-mesa-dev", "libgbm-dev", "libxxf86vm-dev", "python3", "python3-pip"]
+nixPkgs = ["...", "libuuid"]
+nixLibs = ["libuuid"]
 
 [phases.install]
-cmds = []
+cmds = ["npm i tileserver-gl"]
 
 [start]
+paths = ["/usr/local/bin"]
 cmd = "chmod +x ./run.sh && ./run.sh"
